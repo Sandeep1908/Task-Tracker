@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Zap
+       
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -29,17 +29,17 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100vh',
-    backgroundImage: 'url(https://cdn.pixabay.com/photo/2016/06/13/22/12/flash-1455285_1280.jpg)',
+    backgroundImage: 'url("https://www.luxwall.com/wp-content/uploads/glass-building-for-article.jpg")',
     padding: '0!important',
     margin: '0!important',
     width: '100%'
   },
   gridContainer: {
-    backgroundImage: 'url(https://cdn.pixabay.com/photo/2016/06/13/22/12/flash-1455285_1280.jpg)'
+    backgroundImage: 'url("https://www.luxwall.com/wp-content/uploads/glass-building-for-article.jpg")'
   },
   
   image: {
-    backgroundImage: 'url(https://cdn.pixabay.com/photo/2016/06/13/22/12/flash-1455285_1280.jpg)',
+    backgroundImage: 'url("https://www.luxwall.com/wp-content/uploads/glass-building-for-article.jpg")',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -86,6 +86,8 @@ const Login = () =>{
 
   function handleLogin(e) {
     e.preventDefault()
+    console.log(username);
+    console.log(password);
     axios.post('api/users/login', {
       username: username,
       password: password
@@ -106,7 +108,7 @@ const Login = () =>{
 
       <Grid item xs={10} sm={8} md={4} component={Paper} elevation={6} square >
         <div className={classes.paper}>
-          <img src="https://i.imgur.com/Q0IAOwI.png" alt="" className={classes.avatar} style={{ maxHeight: '5vh' }} />
+          <img src="https://www.projectmanager.com/wp-content/uploads/2022/04/PM-logo-email.png" alt="" className={classes.avatar} style={{ maxHeight: '5vh' }} />
           <Typography component="h1" variant="h5">
             Log in
           </Typography>

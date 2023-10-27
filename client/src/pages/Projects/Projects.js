@@ -46,7 +46,7 @@ const Projects = () => {
         console.log('this is projectState in Projects.js', projectState)
       })
       .catch(err => console.log(err))
-  }, [])
+  }, [ ])
 
   return (
     <>

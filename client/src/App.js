@@ -130,14 +130,7 @@ function App() {
                 </Container>
             </main>
           </Route>
-          <Route exact path="/About">
-            <main className={classes.content}>
-              <div className={classes.appBarSpacer} />
-                <Container className={classes.container}>
-                  <About />
-                </Container>
-            </main>
-          </Route>
+    
           <Route path="/projects">
             <main className={classes.content}>
               <div className={classes.appBarSpacer} />

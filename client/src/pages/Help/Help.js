@@ -111,7 +111,7 @@ const Help = () => {
           <Typography variant="h6" component="h2">
             Help Answer Others' Issues
           </Typography>
-          {issueState.filter(issue => issue.isPublic === true && issue.status === 'Open' || issue.status === 'In Progress' ).slice(0, 8).map((issueData) => (
+          {issueState?.filter(issue => issue.isPublic === true && issue.status === 'Open' || issue.status === 'In Progress' ).slice(0, 8).map((issueData) => (
             <>
               <Link onClick={() => handleCommunityIssueOpen(issueData._id)}>
                 <CommunityIssueCard

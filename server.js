@@ -22,7 +22,7 @@ passport.deserializeUser(User.deserializeUser())
 
 passport.use(new JwtStrategy({
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-  secretOrKey: process.env.SECRET
+  secretOrKey: "abcdefghijklm"
 }, ({ id }, cb) => User.findById(id)
   .populate({
     path: 'projects',
@@ -63,5 +63,7 @@ app.get('*', (req, res) => {
 })
 
 require('./db')
-  .then(() => app.listen(process.env.PORT || 3001))
+  .then(() => app.listen(process.env.PORT || 3001,(req,res)=>{
+    console.log("server started");
+  }))
   .catch(err => console.log(err))

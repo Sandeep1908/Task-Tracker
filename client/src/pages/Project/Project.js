@@ -279,7 +279,7 @@ const Project = () => {
                       onDelete={handleDelete}
                       color="default"
                       variant="outlined"
-                      label={members.name}
+                      
                     />
                     </span>
                 ))}

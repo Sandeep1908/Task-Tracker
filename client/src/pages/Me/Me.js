@@ -103,7 +103,7 @@ const Me = props => {
         setMyId(res.data._id)
       })
       .catch(err => console.log(err))
-  }, [])
+  }, [props.replies])
 
   return (
     <>

@@ -49,6 +49,7 @@ const SetModal = props => {
 
   function handleProjectSubmit(e) {
     e.preventDefault();
+    console.log(title);
     axios.post('/api/projects', {
       title: title,
       description: description

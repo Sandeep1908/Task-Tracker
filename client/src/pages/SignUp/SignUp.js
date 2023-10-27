@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://www.github.com/2017mike/project3">
-        Zap
+      
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -29,7 +29,7 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100vh',
-    backgroundImage: 'url(https://cdn.pixabay.com/photo/2016/06/13/22/12/flash-1455285_1280.jpg)',
+    backgroundImage: 'url("https://www.luxwall.com/wp-content/uploads/glass-building-for-article.jpg")',
     backgroundSize: '100%',
     width: '100%'
   },
@@ -109,7 +109,7 @@ function handleName(e) {
       
       <Grid item xs={10} sm={8} md={4} component={Paper} elevation={6} square >
       <div className={classes.paper}>
-        <img src="https://i.imgur.com/Q0IAOwI.png" alt="" className={classes.avatar} style={{ maxHeight: '5vh' }} />
+        <img src="https://www.projectmanager.com/wp-content/uploads/2022/04/PM-logo-email.png" alt="" className={classes.avatar} style={{ maxHeight: '5vh' }} />
         <Typography component="h1" variant="h5">
           Register
         </Typography>

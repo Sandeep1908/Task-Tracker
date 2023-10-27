@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: {
     paddingRight: 24, // keep right padding when drawer closed
-    backgroundColor: 'rgba(20, 167, 252, 0.8)'
+    backgroundColor: '#04A29F'
   },
   toolbarIcon: {
     display: 'flex',
@@ -194,7 +194,7 @@ const Navbar = ({ pages, setpageState, me, isLoggedIn, handleLogOut }) => {
           <MenuIcon />
         </IconButton>
         <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            <img src="https://i.imgur.com/rv1W2ML.png" alt="" className="brandicon" />
+            <img src="https://www.projectmanager.com/wp-content/uploads/2022/04/PM-logo-email.png" alt="" className="brandicon" />
         </Typography>
           <div className={classes.sectionDesktop}>
             {
